@@ -33,24 +33,24 @@ console.log(show);
                 
                 <div>
                 <div>
-                <h1 className="font-bold pt-10 pb-1" style={{fontSize: '20pt'}}>Steven Leonardo</h1>
+                <h1 className="font-bold pt-10 pb-1 text-slate-100" style={{fontSize: '20pt'}}>Steven Leonardo</h1>
                 </div>
                 <div className="flex justify-center pb-5">
                 <h1 className="bg-gray-700 text-gray-400 rounded-lg" style={{width: '150px'}}>Software Engineer</h1>
                 </div>
                 </div>
-                    <div className="bg-gray-600 pb-0 pt-1 rounded-lg w-10 absolute" style={{marginLeft: '100px'}}>
+                    <div className="bg-gray-600 pb-0 pt-1 rounded-lg w-10 absolute hover:scale-125 transition-all duration-300" style={{marginLeft: '100px'}}>
                         <a title="Github" href="https://github.com/Fullaby" target='_blank'><button title="Github"><img style={{width: '25px'}} src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/></button></a>
                     </div>
-                    <div className="bg-gray-600 pb-0 pt-1 rounded-lg w-10 absolute" style={{marginLeft: '155px'}}>
-                        <a title="Instagram" href="https://instagram.com/fullaby" target='_blank'><button title="Instagram"><img style={{width: '25px'}} src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"/></button></a>
+                    <div className="bg-gray-600 pb-0 pt-1 rounded-lg w-10 absolute hover:scale-125 transition-all duration-300" style={{marginLeft: '155px'}}>
+                        <a title="Instagram" href="https://instagram.com/fullaby" className="" target='_blank'><button title="Instagram"><img style={{width: '25px'}} src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"/></button></a>
                     </div>
-                    <div className="bg-gray-600 pb-0 pt-1 rounded-lg w-10 absolute" style={{marginLeft: '210px'}}>
+                    <div className="bg-gray-600 pb-0 pt-1 rounded-lg w-10 absolute hover:scale-125 transition-all duration-300" style={{marginLeft: '210px'}}>
                         <a title="Linked In" href="https://www.linkedin.com/in/steven-leonardo-778557214/" target='_blank'><button title="Linked In"><img style={{width: '25px'}} src="https://www.iconpacks.net/icons/1/free-linkedin-icon-130-thumb.png"/></button></a>
                     </div>
                 <div className="flex justify-center pb-5 pt-14 flex-col">
                 <div className="bg-gray-700 rounded-lg self-center" style={{width: '300px', height:'auto'}}>
-                    <div className="pl-10 pr-10 pt-5 pb-5">
+                    <div className="pl-10 pr-10 pt-5 pb-5 text-slate-100">
                    <div className="text-left pb-2">
                     <h1>Phone:</h1>
                     <h1>(+62) 812-6172-8088</h1>
@@ -74,7 +74,7 @@ console.log(show);
                     
                 </div>
                 <div className="pb-1 pt-10">
-                   <a href="https://drive.google.com/file/d/1KgRpZO5tWrh9RSWh4NuXGJaVRHkuunBN/view?usp=sharing"><button title="Download My CV" className=" bg-gradient-to-r from-pink-500 to-rose-600 pt-2 pb-2 pr-12 pl-12 rounded-full">Download CV</button></a>
+                   <a href="https://drive.google.com/file/d/1KgRpZO5tWrh9RSWh4NuXGJaVRHkuunBN/view?usp=sharing" target='_blank'><button title="Download My CV" className=" bg-gradient-to-r from-pink-500 to-rose-600 pt-2 pb-2 pr-12 pl-12 rounded-full text-slate-100 hover:bg-gradient-to-r hover:from-pink-400 hover:to-red-500 hover:scale-110 transition-all duration-300">Download CV</button></a>
                     </div>
                 </div>
                
@@ -102,8 +102,8 @@ console.log(show);
          </div>
          {show == 'home' && <div className="bg-slate-800 absolute rounded-lg" style={{width: '850px', marginTop: '200px', marginLeft: '465px'}}>
             <div className="p-10">
-                <h1 className="font-bold" style={{fontSize: '30pt'}}>About Me</h1>
-                <hr className="border-black border-2"></hr>
+                <h1 className="font-bold text-slate-100" style={{fontSize: '30pt'}}>About Me</h1>
+                <hr className="border-slate-900 border-2"></hr>
             </div>
             </div> }
 
