@@ -1,6 +1,6 @@
 export default function ProfileCard(){
     return(
-         <div className="pt-10 pl-10">
+         <div className="pt-5 pl-10">
             <div className="absolute pl-20 pb-40 pt-2">
                 <img style={{width: '200px', height: '200px'}} className='rounded-xl' src="https://i.ibb.co/stwvJwP/gradProf.jpg" alt=""/>
                 </div>

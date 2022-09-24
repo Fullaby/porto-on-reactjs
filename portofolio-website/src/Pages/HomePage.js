@@ -29,33 +29,58 @@ export default function HomePage(){
 console.log(show);
     return(
         <div className="bg-gradient-to-r from-sky-900 via-purple-900 to-red-900  bg-cover w-screen min-h-screen flex justify-between">
-        {/* PROFILE CARD */}
            <ProfileCard/>
-         {/* End */}
-         
-         <div className=" bg-slate-800 rounded-xl" style={{width: '200px', marginTop:'100px' , height:'80px', marginRight: '50px'}}>
+         <div className=" bg-slate-800 rounded-xl" style={{width: '200px', marginTop:'80px' , height:'80px', marginRight: '50px'}}>
             <div className="p-2 flex justify-center text-center">
-                <NavLink onClick={()=> setShow('home')}  className={()=> show == 'home' ? "bg-gradient-to-r from-blue-600 to-rose-500 rounded-lg p-3" : "bg-gray-700 rounded-lg p-3" } style={{width: '60px'}}>
+                <NavLink title="About" onClick={()=> setShow('home')}  className={()=> show == 'home' ? "bg-gradient-to-r from-blue-600 to-rose-500 rounded-lg p-3" : "bg-gray-700 rounded-lg p-3" } style={{width: '60px'}}>
                    <img src="https://cdn1.iconfinder.com/data/icons/ios-11-glyphs/30/about-512.png" alt=""/>
                 </NavLink>
-                <NavLink onClick={()=> setShow('project')} className={()=> show == 'project' ? "bg-gradient-to-r from-blue-600 to-rose-500 rounded-lg p-3 ml-5" : "bg-gray-700 rounded-lg p-3 ml-5" } style={{width: '60px'}}>
+                <NavLink title="Project" onClick={()=> setShow('project')} className={()=> show == 'project' ? "bg-gradient-to-r from-blue-600 to-rose-500 rounded-lg p-3 ml-5" : "bg-gray-700 rounded-lg p-3 ml-5" } style={{width: '60px'}}>
                 <img src="https://cdn-icons-png.flaticon.com/512/5956/5956592.png" alt=""/>
                 </NavLink>
             </div>
         
 
          </div>
-         {show == 'home' && <div className="bg-slate-800 absolute rounded-lg" style={{width: '850px', marginTop: '200px', marginLeft: '465px'}}>
+         {show == 'home' && <div className="bg-slate-800 absolute rounded-lg" style={{width: '850px', marginTop: '180px', marginLeft: '465px'}}>
             <div className="p-10">
                 <h1 className="font-bold text-slate-100" style={{fontSize: '30pt'}}>About Me</h1>
                 <hr className="border-slate-900 border-2"></hr>
                 <div>
                     <h1 className="text-slate-100" style={{fontSize:'12pt'}}>Durable, always train to improve skills, a very skillful and passionate Web and Mobile App developer, a competent developer with top coding bootcamp certification, an active learner, seeking something to broaden my Developer knowledge and contribute my skills for something useful for environment and company as a Developer</h1>
                 </div>
+                <h1 className="font-bold text-slate-100 pt-5" style={{fontSize: '30pt'}}>Education</h1>
+                <hr className="border-slate-900 border-2"></hr>
+                <div className="text-slate-100">
+                    <ul>
+                        <div>
+                        <li>Hacktiv8, <span style={{fontSize: '8pt'}}>May 2022 - Sep 2022</span></li>
+                        <h1 style={{fontSize: '10pt'}}>Full Stack Immersive Coding Bootcamp 89,4/100, Achieved Graduate Award</h1>
+                        </div>
+
+                        <div className="pt-2">
+                        <li>Universitas Internasional Batam, <span style={{fontSize: '8pt'}}>Jul 2020 - Jul 2025</span></li>
+                        <h1 style={{fontSize: '10pt'}}>Law bachelor's degree, Employee Class/Night Class</h1>
+                        </div>
+
+                        <div className="pt-2">
+                        <li>Sekolah Mondial, <span style={{fontSize: '8pt'}}>2014 - 2020</span></li>
+                        <h1 style={{fontSize: '10pt'}}>Social Sciences 82/100, High School</h1>
+                        </div>
+                    </ul>
+                </div>
+                <h1 className="font-bold text-slate-100 pt-5" style={{fontSize: '30pt'}}>Skills</h1>
+                <hr className="border-slate-900 border-2"></hr>
+                <div>
+                    <div className="text-slate-100 whitespace-pre-line" style={{fontSize:'12pt'}}>
+                        Node.JS,  React.JS, Vue.JS, React Native, Javascript, Express.JS, Sequelize, PostgreSQL, mongoDB, Redux, HTML/CSS, Tailwind CSS, Bootstrap, Pinia, JQuery, Apollo Server, GraphQL and Microservices
+                      </div>
+                </div>
+                
             </div>
             </div> }
 
-         {show == 'project' && <div className="bg-slate-800 absolute rounded-lg p-10" style={{width: '850px' , height: 'auto', marginTop: '200px', marginLeft: '465px'}}>
+         {show == 'project' && <div className="bg-slate-800 absolute rounded-lg p-10" style={{width: '850px' , height: 'auto', marginTop: '180px', marginLeft: '465px'}}>
             <div>
                 <h1 className="font-bold text-slate-100" style={{fontSize: '30pt'}}>My Projects</h1>
                 <hr className="border-slate-900 border-2"></hr>
@@ -68,7 +93,7 @@ console.log(show);
         <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">{el.name}</h5>
         <span className="text-sm text-gray-500 dark:text-gray-400">{el.desc}</span>
         <div className="flex mt-4 space-x-3 md:mt-6">
-            <a href={el.link} target='_blank' className="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Visit</a>
+            <a href={el.link} title='Visit My Project' target='_blank' className="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Visit</a>
         </div>
     </div>
 </div>
