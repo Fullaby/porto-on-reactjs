@@ -13,7 +13,7 @@ export default function ProfileCard(){
                 <h1 className="font-bold pt-10 pb-1 text-slate-100" style={{fontSize: '20pt'}}>Steven Leonardo</h1>
                 </div>
                 <div className="flex justify-center pb-5">
-                <h1 className="bg-gray-700 text-gray-400 rounded-lg" style={{width: '150px'}}>Software Engineer</h1>
+                <h1 className="bg-gray-700 text-gray-300 rounded-lg" style={{width: '150px'}}>Software Engineer</h1>
                 </div>
                 </div>
                     <div className="bg-gray-600 pb-0 pt-1 rounded-lg w-10 absolute hover:scale-125 transition-all duration-300" style={{marginLeft: '100px'}}>
@@ -56,7 +56,7 @@ export default function ProfileCard(){
                     
                 </div>
                 <div className="pb-1 pt-10">
-                   <a href="https://drive.google.com/file/d/1KgRpZO5tWrh9RSWh4NuXGJaVRHkuunBN/view?usp=sharing" target='_blank'><button title="Download My CV" className=" bg-gradient-to-r from-pink-500 to-rose-600 pt-2 pb-2 pr-12 pl-12 rounded-full text-slate-100 hover:bg-gradient-to-r hover:from-pink-400 hover:to-red-500 hover:scale-110 transition-all duration-300">Download CV</button></a>
+                   <a href="https://drive.google.com/file/d/1KgRpZO5tWrh9RSWh4NuXGJaVRHkuunBN/view?usp=sharing" target='_blank'><button title="Download My CV" className=" bg-gradient-to-r from-pink-500 to-rose-600 pt-2 pb-2 pr-24 pl-24 rounded-full text-slate-100 hover:bg-gradient-to-r hover:from-pink-400 hover:to-red-500 hover:scale-110 transition-all duration-300">My CV</button></a>
                     </div>
                 </div>
                
